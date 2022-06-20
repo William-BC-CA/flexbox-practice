@@ -1,0 +1,53 @@
+.flexbox-container{
+    display: flex;
+
+    /* Main Axis */
+
+    /* Default */
+    /* justify-content: flex-start;  */
+
+    /* Sets everything to the center */
+    /* justify-content: center; */
+
+    /* Spaces everything out as much as possible */
+    /* justify-content: space-between; */
+
+    /* Gives an equal amount of space around */
+    justify-content: space-around;
+
+    /* Cross Axis */
+
+    /* Stretch to use the most space that it can vertically */
+    /* align-items: stretch; */
+
+    /* Keep size of items */
+    /* align-items: flex-start; */
+
+    /* Use to center them while maintaining size */
+    align-items: center;
+
+    /* Multi-Line Flexbox containers */
+    align-content: center;
+
+    /* Will wrap onto different lines instead of shrinking size */
+    flex-wrap: wrap;
+}
+
+.flexbox-item{
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+
+.flexbox-item-1{
+    min-height: 100px;
+}
+
+.flexbox-item-2{
+    min-height: 200px;
+}
+
+.flexbox-item-3{
+    min-height: 300px;
+}
