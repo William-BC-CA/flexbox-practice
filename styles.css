@@ -1,6 +1,8 @@
 .flexbox-container{
     display: flex;
 
+    height: 700px;
+
     /* Main Axis */
 
     /* Default */
@@ -13,7 +15,7 @@
     /* justify-content: space-between; */
 
     /* Gives an equal amount of space around */
-    justify-content: space-around;
+    /* justify-content: space-around; */
 
     /* Cross Axis */
 
@@ -24,13 +26,32 @@
     /* align-items: flex-start; */
 
     /* Use to center them while maintaining size */
-    align-items: center;
+    /* align-items: center; */
 
     /* Multi-Line Flexbox containers */
-    align-content: center;
+    /* align-content: center; */
 
     /* Will wrap onto different lines instead of shrinking size */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+
+    /* Will align at the top of the container */
+    /* align-content: flex-start; */
+
+    /* Will align at the bottom of the container */
+    /* align-content: flex-end; */
+
+    /* Align content not used often */
+
+    /* Puts everything vertical into a column */
+    /* flex-direction: column; */
+
+    /* For flex-direction: column, they center horizontally */
+    /* justify-content: center; */
+
+    /* TO put everything to center from column */
+    /* align-items: center; */
+
+
 }
 
 .flexbox-item{
@@ -41,13 +62,46 @@
 }
 
 .flexbox-item-1{
+
+    /* Shorthand (flex grow, flex shrink, flex basis)*/
+    /* flex: 1 0 0px; */
+
+    /* Will set all to one value */
+    flex: 1;
+
     min-height: 100px;
+
+    /* Does not shrink */
+    flex-shrink: 0;
+
+    /* Is at the bottom */
+    align-self: flex-end;
+
+    /* Rearrange the order visually, mess up order for screen readers! Problem to input box! Best to not really use this! */
+    order: 3;
 }
 
 .flexbox-item-2{
     min-height: 200px;
+
+    flex-grow: 2;
+
+    /* The starting point */
+    flex-basis: 0;
+
+    /* Overrides other align property, can be applied to other items, at center */
+    align-self: center;
+
+    order: 1;
 }
 
 .flexbox-item-3{
     min-height: 300px;
+
+    /* Takes up space no matter how much space there is */
+    flex-grow: 1;
+
+    flex-basis: 0;
+
+    order: 2;
 }
